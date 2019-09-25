@@ -12,6 +12,9 @@
 		384DBE702330147100483EF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384DBE6E2330147100483EF0 /* Main.storyboard */; };
 		384DBE722330147400483EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384DBE712330147400483EF0 /* Assets.xcassets */; };
 		384DBE752330147400483EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384DBE732330147400483EF0 /* LaunchScreen.storyboard */; };
+		384DBE7D233279D000483EF0 /* NumberTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE7C233279D000483EF0 /* NumberTableVC.swift */; };
+		384DBE7F23327A4000483EF0 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE7E23327A4000483EF0 /* Fact.swift */; };
+		38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5764F233BEEE9007A686C /* WeatherVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		384DBE712330147400483EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384DBE742330147400483EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384DBE762330147400483EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384DBE7C233279D000483EF0 /* NumberTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableVC.swift; sourceTree = "<group>"; };
+		384DBE7E23327A4000483EF0 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		38E5764F233BEEE9007A686C /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				384DBE6A2330147100483EF0 /* AppDelegate.swift */,
 				384DBE6C2330147100483EF0 /* ViewController.swift */,
 				384DBE6E2330147100483EF0 /* Main.storyboard */,
+				38E5764F233BEEE9007A686C /* WeatherVC.swift */,
+				384DBE7C233279D000483EF0 /* NumberTableVC.swift */,
+				384DBE7E23327A4000483EF0 /* Fact.swift */,
 				384DBE712330147400483EF0 /* Assets.xcassets */,
 				384DBE732330147400483EF0 /* LaunchScreen.storyboard */,
 				384DBE762330147400483EF0 /* Info.plist */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384DBE7D233279D000483EF0 /* NumberTableVC.swift in Sources */,
 				384DBE6D2330147100483EF0 /* ViewController.swift in Sources */,
 				384DBE6B2330147100483EF0 /* AppDelegate.swift in Sources */,
+				384DBE7F23327A4000483EF0 /* Fact.swift in Sources */,
+				38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
