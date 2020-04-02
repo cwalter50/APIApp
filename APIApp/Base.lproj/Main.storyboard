@@ -290,11 +290,83 @@
                         <segue destination="MdO-2W-rri" kind="relationship" relationship="viewControllers" id="LsH-GB-rDh"/>
                         <segue destination="Zdg-qx-CWa" kind="relationship" relationship="viewControllers" id="eGw-0C-7pY"/>
                         <segue destination="omn-rB-eX2" kind="relationship" relationship="viewControllers" id="F5n-Sz-4Wi"/>
+                        <segue destination="wvz-Zb-Hem" kind="relationship" relationship="viewControllers" id="dDp-Th-GOy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7M-IK-wgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </scene>
+        <!--Stock-->
+        <scene sceneID="fFL-mH-SUG">
+            <objects>
+                <viewController id="wvz-Zb-Hem" customClass="StockVC" customModule="APIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqL-aQ-uTn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CXs-Bl-SUo">
+                                <rect key="frame" x="20" y="64" width="374" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="ieF-DR-YOs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="299.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stock Symbol ie AAPL, FB, NFLX" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAz-xA-k4k">
+                                        <rect key="frame" x="0.0" y="309.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="l8P-zU-Uhv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN4-Tj-4R4">
+                                        <rect key="frame" x="0.0" y="369.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.29451612989999998" blue="0.304874164" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rBi-DZ-7NS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Get Stock Price">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stockButtonTapped:" destination="wvz-Zb-Hem" eventType="touchUpInside" id="toC-8g-qlv"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=STOCKSYMBOL&amp;apikey=APIKEY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6Xb-Y4-uzs">
+                                        <rect key="frame" x="0.0" y="429.5" width="374" height="299.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Xb-Y4-uzs" firstAttribute="height" secondItem="ieF-DR-YOs" secondAttribute="height" id="iwy-ZU-5Ws"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CXs-Bl-SUo" firstAttribute="leading" secondItem="Sjd-sK-iZI" secondAttribute="leading" constant="20" id="Gmk-hD-5yr"/>
+                            <constraint firstItem="CXs-Bl-SUo" firstAttribute="top" secondItem="Sjd-sK-iZI" secondAttribute="top" constant="20" id="NS2-WP-5KG"/>
+                            <constraint firstItem="Sjd-sK-iZI" firstAttribute="bottom" secondItem="CXs-Bl-SUo" secondAttribute="bottom" constant="20" id="TX8-KH-18b"/>
+                            <constraint firstItem="Sjd-sK-iZI" firstAttribute="trailing" secondItem="CXs-Bl-SUo" secondAttribute="trailing" constant="20" id="sQS-0I-HRZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sjd-sK-iZI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stock" id="0jo-sb-MYh"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="ieF-DR-YOs" id="jeA-yz-NYc"/>
+                        <outlet property="stockButton" destination="qN4-Tj-4R4" id="Joc-gI-HPD"/>
+                        <outlet property="stockTF" destination="dAz-xA-k4k" id="FBL-2j-jpK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMj-fM-YS5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-628"/>
         </scene>
     </scenes>
 </document>
