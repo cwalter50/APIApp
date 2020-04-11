@@ -23,8 +23,6 @@ class StockVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text = ""
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func stockButtonTapped(_ sender: UIButton) {
@@ -55,20 +53,27 @@ class StockVC: UIViewController {
                   print("Cannot decode JSON response")
                   return
                 }
-                let dateFormatterGet = DateFormatter()
-                dateFormatterGet.dateFormat = "yyyy-MM-dd"
-                let date = Date()
-                let dateString = dateFormatterGet.string(from: date)
-                print(dateString)
+                print(responseJSON)
                 
-                let dayStats = responseJSON["Time Series (Daily)"] as! [String: Any]
-                let current = dayStats[dateString] as? [String: String]
-                print(current ?? "error")
-                let close: String = current?["4. close"] ?? "error"
-//                print(responseJSON)
+                let theStock = Stock(data: responseJSON)
+//                let dateFormatterGet = DateFormatter()
+//                dateFormatterGet.dateFormat = "yyyy-MM-dd"
+//                let date = Date()
+//                let dateString = dateFormatterGet.string(from: date)
+//                print(dateString)
+//                let generalData = responseJSON["Meta Data"] as! [String: Any]
+//
+//                let dayStats = responseJSON["Time Series (Daily)"] as! [String: Any]
+//
+//                let current = dayStats[dateString] as? [String: String]
+//                print(current ?? "error")
+//                let close: String = current?["4. close"] ?? "error"
+////                print(responseJSON)
+                
                  
                 DispatchQueue.main.async {
-                    self.resultLabel.text = "\(dateString) Close Price = $\(close)"
+                    self.resultLabel.text = theStock.description
+//                    self.resultLabel.text = "\(dateString) Close Price = $\(close)"
                     self.view.endEditing(true)
                 }
             }
@@ -78,14 +83,5 @@ class StockVC: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

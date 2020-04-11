@@ -17,6 +17,8 @@
 		38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5764F233BEEE9007A686C /* WeatherVC.swift */; };
 		83D2141624342AC600D623FA /* FOffVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2141524342AC600D623FA /* FOffVC.swift */; };
 		83D2141824356C3600D623FA /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2141724356C3600D623FA /* StockVC.swift */; };
+		83D2143F24414AA600D623FA /* StockDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2143E24414AA600D623FA /* StockDaily.swift */; };
+		83D2144124414ABC00D623FA /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2144024414ABC00D623FA /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		38E5764F233BEEE9007A686C /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		83D2141524342AC600D623FA /* FOffVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FOffVC.swift; sourceTree = "<group>"; };
 		83D2141724356C3600D623FA /* StockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVC.swift; sourceTree = "<group>"; };
+		83D2143E24414AA600D623FA /* StockDaily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDaily.swift; sourceTree = "<group>"; };
+		83D2144024414ABC00D623FA /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				384DBE6E2330147100483EF0 /* Main.storyboard */,
 				38E5764F233BEEE9007A686C /* WeatherVC.swift */,
 				83D2141724356C3600D623FA /* StockVC.swift */,
+				83D2144024414ABC00D623FA /* Stock.swift */,
+				83D2143E24414AA600D623FA /* StockDaily.swift */,
 				83D2141524342AC600D623FA /* FOffVC.swift */,
 				384DBE7C233279D000483EF0 /* NumberTableVC.swift */,
 				384DBE7E23327A4000483EF0 /* Fact.swift */,
@@ -153,10 +159,12 @@
 				384DBE7D233279D000483EF0 /* NumberTableVC.swift in Sources */,
 				83D2141824356C3600D623FA /* StockVC.swift in Sources */,
 				384DBE6D2330147100483EF0 /* ViewController.swift in Sources */,
+				83D2143F24414AA600D623FA /* StockDaily.swift in Sources */,
 				384DBE6B2330147100483EF0 /* AppDelegate.swift in Sources */,
 				83D2141624342AC600D623FA /* FOffVC.swift in Sources */,
 				384DBE7F23327A4000483EF0 /* Fact.swift in Sources */,
 				38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */,
+				83D2144124414ABC00D623FA /* Stock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
