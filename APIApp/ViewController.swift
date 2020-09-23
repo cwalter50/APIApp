@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func buttonTapped(_ sender: UIButton)
     {
-        
+        // Figure out how to make a call to the API
         let numberString = numberTextField.text!
         
         var urlString = "http://numbersapi.com/"
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 guard let data = data else { return }
                 let result = String(data: data, encoding: .utf8)!
                 print(String(data: data, encoding: .utf8)!)
-                
+        
                 DispatchQueue.main.async {
                     self.displayLabel.text = result
                     self.view.endEditing(true)
@@ -67,4 +67,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
 }
+
+
 

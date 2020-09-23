@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="77.678571428571431"/>
+            <point key="canvasLocation" x="1048" y="51"/>
         </scene>
         <!--Jeopardy-->
         <scene sceneID="nd6-Fz-Hlp">
@@ -307,6 +307,7 @@
                         <segue destination="Zdg-qx-CWa" kind="relationship" relationship="viewControllers" id="eGw-0C-7pY"/>
                         <segue destination="omn-rB-eX2" kind="relationship" relationship="viewControllers" id="F5n-Sz-4Wi"/>
                         <segue destination="wvz-Zb-Hem" kind="relationship" relationship="viewControllers" id="dDp-Th-GOy"/>
+                        <segue destination="yLa-DB-5CL" kind="relationship" relationship="viewControllers" id="xba-r2-JcA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7M-IK-wgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,6 +384,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMj-fM-YS5" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="-628"/>
+        </scene>
+        <!--Jokes-->
+        <scene sceneID="52n-L6-Wg4">
+            <objects>
+                <viewController id="yLa-DB-5CL" customClass="JokesVC" customModule="APIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1G-t1-7dQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ulB-LZ-5bY">
+                                <rect key="frame" x="20" y="64" width="374" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="t5n-TR-cuF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="329.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qq-ks-BNh">
+                                        <rect key="frame" x="0.0" y="339.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.29451612989999998" blue="0.304874164" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="npo-Od-4eH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Get Joke">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="yLa-DB-5CL" eventType="touchUpInside" id="ZZY-uy-lvf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://official-joke-api.appspot.com/random_joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0ut-BW-Wg0">
+                                        <rect key="frame" x="0.0" y="399.5" width="374" height="329.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0ut-BW-Wg0" firstAttribute="height" secondItem="t5n-TR-cuF" secondAttribute="height" id="Rfj-Ue-jA1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ulB-LZ-5bY" firstAttribute="leading" secondItem="QSh-yw-RlC" secondAttribute="leading" constant="20" id="VEw-VF-iAc"/>
+                            <constraint firstItem="ulB-LZ-5bY" firstAttribute="top" secondItem="QSh-yw-RlC" secondAttribute="top" constant="20" id="eb1-LM-zkK"/>
+                            <constraint firstItem="QSh-yw-RlC" firstAttribute="trailing" secondItem="ulB-LZ-5bY" secondAttribute="trailing" constant="20" id="mSO-MI-anc"/>
+                            <constraint firstItem="QSh-yw-RlC" firstAttribute="bottom" secondItem="ulB-LZ-5bY" secondAttribute="bottom" constant="20" id="xf1-Ev-xQq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QSh-yw-RlC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Jokes" id="Lvr-bE-Rah"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="t5n-TR-cuF" id="FEp-AA-eQ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoL-gH-Jaa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="-339"/>
         </scene>
     </scenes>
 </document>
