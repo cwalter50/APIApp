@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var helperLabel: UILabel!
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -24,12 +24,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         displayLabel.text = ""
         helperLabel.text = "Enter a number or \"random\" for a fact.\n numbersapi.com/\"Number\""
     }
-
+    
     @IBAction func buttonTapped(_ sender: UIButton)
     {
-
+        
         let numberString = numberTextField.text!
-       
+        
         var urlString = "http://numbersapi.com/"
         if numberString != ""
         {
@@ -39,11 +39,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             urlString += "random"
         }
-
-        
         if let url = URL(string: urlString)
         {
-            
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 guard let data = data else { return }
                 let result = String(data: data, encoding: .utf8)!
@@ -54,9 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     self.view.endEditing(true)
                 }
             }
-            
             task.resume()
-            
         }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
