@@ -50,18 +50,19 @@ class JeopardyVC: UIViewController {
                 }
 
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String: Any]]
-                    
-                    let dictionary = json![0]
-                    let theQuestion = dictionary["question"] as? String ?? "clue error"
-                    self.answer = dictionary["answer"] as? String ?? "answer error"
-                    DispatchQueue.main.async {
-                        
-                        self.displayLabel.text = theQuestion
-                        self.view.endEditing(true)
+                    guard let data = data else {return}
+                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [[String: Any]]
+                    if let jsonData = json {
+                        let dictionary = jsonData[0]
+                        let theQuestion = dictionary["question"] as? String ?? "clue error"
+                        self.answer = dictionary["answer"] as? String ?? "answer error"
+                        DispatchQueue.main.async {
+                            self.displayLabel.text = theQuestion
+                            self.view.endEditing(true)
+                        }
+                        print(jsonData)
                     }
                     
-                    print(json!)
                 } catch let jsonError {
                     print(jsonError)
                 }

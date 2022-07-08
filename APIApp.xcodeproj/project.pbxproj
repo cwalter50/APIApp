@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		383C65E3251ACB8700E1497D /* JeopardyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C65E2251ACB8700E1497D /* JeopardyVC.swift */; };
-		383C65E5251AE59600E1497D /* JokesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C65E4251AE59600E1497D /* JokesVC.swift */; };
 		384DBE6B2330147100483EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE6A2330147100483EF0 /* AppDelegate.swift */; };
 		384DBE6D2330147100483EF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE6C2330147100483EF0 /* ViewController.swift */; };
 		384DBE702330147100483EF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384DBE6E2330147100483EF0 /* Main.storyboard */; };
@@ -17,6 +16,7 @@
 		384DBE7D233279D000483EF0 /* NumberTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE7C233279D000483EF0 /* NumberTableVC.swift */; };
 		384DBE7F23327A4000483EF0 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384DBE7E23327A4000483EF0 /* Fact.swift */; };
 		38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E5764F233BEEE9007A686C /* WeatherVC.swift */; };
+		83C05FB72878831800B0A58C /* DadJokesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C05FB62878831800B0A58C /* DadJokesVC.swift */; };
 		83D2141824356C3600D623FA /* StockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2141724356C3600D623FA /* StockVC.swift */; };
 		83D2143F24414AA600D623FA /* StockDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2143E24414AA600D623FA /* StockDaily.swift */; };
 		83D2144124414ABC00D623FA /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2144024414ABC00D623FA /* Stock.swift */; };
@@ -27,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		383C65E2251ACB8700E1497D /* JeopardyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeopardyVC.swift; sourceTree = "<group>"; };
-		383C65E4251AE59600E1497D /* JokesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesVC.swift; sourceTree = "<group>"; };
 		384DBE672330147100483EF0 /* APIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		384DBE6A2330147100483EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384DBE6C2330147100483EF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		384DBE7C233279D000483EF0 /* NumberTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableVC.swift; sourceTree = "<group>"; };
 		384DBE7E23327A4000483EF0 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		38E5764F233BEEE9007A686C /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		83C05FB62878831800B0A58C /* DadJokesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesVC.swift; sourceTree = "<group>"; };
 		83D2141724356C3600D623FA /* StockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVC.swift; sourceTree = "<group>"; };
 		83D2143E24414AA600D623FA /* StockDaily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDaily.swift; sourceTree = "<group>"; };
 		83D2144024414ABC00D623FA /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
@@ -81,12 +81,12 @@
 				83FA271227C70F16008DA2BC /* Animal.swift */,
 				83FA271027C70815008DA2BC /* AnimalVC.swift */,
 				38E5764F233BEEE9007A686C /* WeatherVC.swift */,
+				83C05FB62878831800B0A58C /* DadJokesVC.swift */,
 				383C65E2251ACB8700E1497D /* JeopardyVC.swift */,
 				83D2141724356C3600D623FA /* StockVC.swift */,
 				83D2144024414ABC00D623FA /* Stock.swift */,
 				83D2143E24414AA600D623FA /* StockDaily.swift */,
 				384DBE6C2330147100483EF0 /* ViewController.swift */,
-				383C65E4251AE59600E1497D /* JokesVC.swift */,
 				384DBE7C233279D000483EF0 /* NumberTableVC.swift */,
 				384DBE7E23327A4000483EF0 /* Fact.swift */,
 				384DBE712330147400483EF0 /* Assets.xcassets */,
@@ -183,8 +183,8 @@
 				83FA271127C70815008DA2BC /* AnimalVC.swift in Sources */,
 				384DBE7F23327A4000483EF0 /* Fact.swift in Sources */,
 				38E57650233BEEE9007A686C /* WeatherVC.swift in Sources */,
+				83C05FB72878831800B0A58C /* DadJokesVC.swift in Sources */,
 				83D2144124414ABC00D623FA /* Stock.swift in Sources */,
-				383C65E5251AE59600E1497D /* JokesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
