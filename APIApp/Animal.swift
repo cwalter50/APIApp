@@ -11,17 +11,9 @@ import Foundation
 
 struct Animal: Codable
 {
-    
-    
     var name: String
     var latin_name: String
-    
-//    var length_min: String
-//    var length_max: String
-//    var weigth_min: String
-//    var weight_max: String
     var lifespan: String
-    
     var animal_type: String
     var image_link: String
     var active_time: String
@@ -29,5 +21,4 @@ struct Animal: Codable
     var habitat: String
     var diet: String
     var id: Int
-    
 }
